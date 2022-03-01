@@ -4,7 +4,7 @@ const btn = document.querySelector("#btn");
 
 btn.addEventListener("click", getQuote);
 
-async function getQuote() {
+function getQuote() {
   fetch("http://api.quotable.io/random")
   .then(res => res.json())
   .then(data => {
